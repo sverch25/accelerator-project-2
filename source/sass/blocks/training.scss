@@ -1,0 +1,99 @@
+.training__buttons {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    position: absolute;
+    top: 60px;
+    right: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 120px;
+    right: 120px;
+  }
+}
+
+.training {
+  display: grid;
+  grid-template-columns: 320px;
+  justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1440px;
+  }
+}
+
+.training__wrapper {
+  padding: 20px 15px;
+}
+
+.training__title {
+  margin-bottom: 18px;
+}
+
+.training__text p {
+  margin: 0;
+  margin-bottom: 12px;
+}
+
+.training__container {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.training__subtitle {
+  padding-bottom: 22px;
+}
+
+.training__list {
+  display: flex;
+  width: 290px;
+  overflow: hidden;
+  gap: 15px;
+}
+
+.training__item {
+  min-width: 290px;
+  padding: 15px;
+  border: 1px solid rgba(2, 102, 193, 0.1);
+}
+
+.training__image {
+  width: 260px;
+  height: 200px;
+  display: block;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.training__content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.training__content h4 {
+  margin: 0;
+  margin-bottom: 15px;
+  width: 234px;
+  line-height: 16px;
+  font-weight: 700;
+}
+
+.training__link {
+  display: flex;
+  width: 24px;
+  height: 24px;
+  padding: 8px 5px;
+  border: 1px solid rgba(45, 56, 63, 0.3);
+}
+
+.training__content p {
+  margin: 0;
+  font-size: 12px;
+  line-height: 16px;
+}

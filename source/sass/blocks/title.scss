@@ -1,0 +1,46 @@
+.title {
+  position: relative;
+  margin: 0;
+  padding-top: 16px;
+  padding-bottom: 17px;
+  font-size: 22px;
+  line-height: 22px;
+  font-weight: 800;
+
+  @media (min-width: $tablet-width) {
+    font-size: 25px;
+    line-height: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 35px;
+    line-height: 35px;
+  }
+}
+
+.title::after {
+  content: attr(data-duplicate-text);
+  font-size: 26px;
+  line-height: 26px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.03;
+  pointer-events: none;
+
+  // aria-hidden: true;
+
+  @media (min-width: $tablet-width) {
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 55px;
+    line-height: 55px;
+  }
+}
+
+.title[data-duplicate-text]::after {
+  content: attr(data-duplicate-text);
+}

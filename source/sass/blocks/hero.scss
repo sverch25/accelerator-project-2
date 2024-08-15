@@ -1,0 +1,250 @@
+.hero {
+  position: relative;
+  display: grid;
+  grid-template-columns: 320px;
+  justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1440px;
+  }
+}
+
+.hero::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: $gradient-33;
+  pointer-events: none;
+}
+
+.hero__list {
+  display: flex;
+  width: 320px;
+  overflow: hidden;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+  }
+}
+
+.hero__item {
+  min-width: 320px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    min-width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 1440px;
+  }
+}
+
+.hero__image {
+  display: block;
+}
+
+.hero__content {
+  position: absolute;
+  bottom: 56px;
+  left: 15px;
+  right: 15px;
+  text-align: center;
+  color: $base-white;
+  min-height: 472px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+
+  @media (min-width: $tablet-width) {
+    min-height: 390px;
+    top: 0;
+    margin-bottom: 9px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 780px;
+    left: 120px;
+    top: 5px;
+    margin-bottom: 7px;
+    text-align: left;
+    align-items: flex-start;
+  }
+}
+
+.hero__content h2 {
+  margin: 0;
+  margin-bottom: 15px;
+  font-size: 26px;
+  line-height: 26px;
+  font-weight: 800;
+
+  @media (min-width: $tablet-width) {
+    font-size: 56px;
+    line-height: 56px;
+    margin-bottom: 13px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 77px;
+    line-height: 77px;
+    margin-bottom: 23px;
+  }
+}
+
+.hero__content p {
+  font-size: 15px;
+  margin: 0;
+  margin-bottom: 60px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+    line-height: 24px;
+    width: 500px;
+    margin-bottom: 37px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 420px;
+  }
+}
+
+.hero__button {
+  min-width: 180px;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 500;
+  height: 56px;
+  background-color: $additional;
+  border: 1px solid $additional;
+  color: $base-white;
+  cursor: pointer;
+
+  &:hover {
+    border: 1px solid $condition-active;
+    color: $condition-active;
+    background-color: $base-white;
+  }
+
+  &:focus {
+    border: 1px solid $base-white;
+    color: $condition-active;
+    background-color: $base-white;
+  }
+
+  &:active {
+    border: 1px solid $condition-active;
+    color: $base-white;
+    background-color: $condition-active;
+  }
+
+  &:disabled {
+    border: 1px solid $condition-disabled;
+    color: $base-white;
+    background-color: $condition-disabled;
+  }
+}
+
+.hero__info {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    bottom: 80px;
+    left: 120px;
+    z-index: 1;
+  }
+}
+
+.hero__text {
+  position: relative;
+  color: $base-white;
+  font-size: 12px;
+  line-height: 16px;
+  padding: 14px 18px 12px 40px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.hero__text--level {
+  padding-right: 19px;
+}
+
+.hero__text::before {
+  position: absolute;
+  left: 19px;
+  top: 15px;
+  content: "";
+  width: 12px;
+  height: 12px;
+  background-repeat: no-repeat;
+  background-size: 12px 12px;
+}
+
+.hero__text--duration::before {
+  background-image: url("../__spritemap#sprite-moon-view");
+}
+
+.hero__text--level::before {
+  background-image: url("../__spritemap#sprite-level-view");
+}
+
+.hero__pagination {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 20px;
+  cursor: pointer;
+  z-index: 1;
+
+  // @media (min-width: $desktop-width) {
+  //   bottom: 92px;
+  //   left: auto;
+  //   right: 70px;
+  // }
+}
+
+.hero__pagination-button {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 1px solid $base-white;
+  background-color: transparent;
+
+  @media (min-width: $tablet-width) {
+    width: 20px;
+    height: 20px;
+  }
+
+  &:hover {
+    background-color: #d9d9d9;
+  }
+
+  &:focus {
+    outline: 1px solid rgba(255, 255, 255, 0.5);
+  }
+
+  &:active {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+}
+
+.hero__pagination-button--selected {
+  background-color: $base-white;
+}
