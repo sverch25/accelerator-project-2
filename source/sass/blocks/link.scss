@@ -1,0 +1,22 @@
+.link {
+  color: $base-primary;
+  border: 1px solid rgba(45, 56, 63, 0.3);
+
+  &:hover {
+    border: 1px solid $base-primary;
+  }
+
+  &:focus {
+    border: none;
+  }
+
+  &:active {
+    background-color: $additional;
+    color: $base-white;
+  }
+}
+
+.link--disabled {
+  color: $base-primary;
+  opacity: 0.3;
+}

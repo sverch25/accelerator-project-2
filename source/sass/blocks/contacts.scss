@@ -1,0 +1,251 @@
+.contacts {
+  border-bottom: 1px solid rgba(45, 56, 63, 0.2);
+}
+
+.contacts__wrapper {
+  padding: 20px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 44px 0 39px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 96px 120px 91px;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.contacts__container {
+  margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+    margin-right: 100px;
+  }
+}
+
+.contacts__title {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 12px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 45px;
+    padding-right: 45px;
+    margin-bottom: 4px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+    padding-top: 27px;
+    margin-bottom: 6px;
+  }
+}
+
+.contacts__title::after {
+  left: 15px;
+
+  @media (min-width: $tablet-width) {
+    left: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 0;
+    top: 10px;
+  }
+}
+
+.contacts__text p {
+  margin: 0;
+  padding: 0 15px;
+
+  @media (min-width: $tablet-width) {
+    width: 485px;
+    padding: 0;
+    margin: 0 45px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 500px;
+    margin: 0;
+  }
+}
+
+.contacts__text {
+  margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 39px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 47px;
+  }
+}
+
+.contacts__list {
+  margin: 0 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 45px;
+    flex-direction: row;
+    gap: 40px;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+    margin: 0;
+    gap: 32px;
+  }
+}
+
+.contacts__item {
+  position: relative;
+  padding-left: 32px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 33px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 56px;
+  }
+}
+
+.contacts__item::before {
+  position: absolute;
+  content: "";
+  width: 22px;
+  height: 22px;
+  top: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 22px 22px;
+
+  @media (min-width: $tablet-width) {
+    width: 24px;
+    height: 24px;
+    background-size: 24px 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 26px;
+    height: 26px;
+    background-size: 26px 26px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+.contacts__item--phone::before {
+  background-image: url("../__spritemap#sprite-phone-view");
+}
+
+.contacts__item--email::before {
+  background-image: url("../__spritemap#sprite-mail-view");
+
+  @media (min-width: $tablet-width) {
+    left: 1px;
+  }
+}
+
+.contacts__item--address::before {
+  background-image: url("../__spritemap#sprite-pin-address-view");
+
+  @media (min-width: $tablet-width) {
+    left: 1px;
+  }
+}
+
+.contacts__subtitle {
+  margin: 0;
+  margin-bottom: 8px;
+  line-height: 14px;
+  font-weight: 600;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 16px;
+    margin-bottom: 4px;
+    margin-top: 2px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    line-height: 18px;
+    margin-bottom: 9px;
+  }
+}
+
+.contacts__link {
+  text-decoration: none;
+  font-style: normal;
+  color: $base-primary;
+
+  @media (min-width: $tablet-width) {
+    br {
+      display: none;
+    }
+
+    line-height: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.contacts__item--phone,
+.contacts__item--email {
+  cursor: pointer;
+}
+
+.contacts__map {
+  position: relative;
+}
+
+.contacts__map::before {
+  position: absolute;
+  content: "";
+  width: 28px;
+  height: 28px;
+  right: 94px;
+  bottom: 144px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 28px 28px;
+  background-image: url("../__spritemap#sprite-pin-filled-view");
+
+  @media (min-width: $tablet-width) {
+    width: 42px;
+    height: 42px;
+    background-size: 42px 42px;
+    right: 341px;
+    bottom: 116px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 48px;
+    height: 48px;
+    background-size: 48px 48px;
+    right: 192px;
+    bottom: 114px;
+  }
+}
+
+.contacts__image {
+  display: block;
+}

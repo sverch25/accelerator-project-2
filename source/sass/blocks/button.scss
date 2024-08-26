@@ -1,35 +1,52 @@
+.button-wrapper {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    position: absolute;
+    z-index: 10;
+    top: 16px; // для блока туров
+    right: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 13px; // для блока туров
+  }
+}
+
 .button {
+  border: 1px solid $additional;
+  background-color: $additional;
+  color: $base-white;
+  cursor: pointer;
+
   @media (min-width: $tablet-width) {
     width: 37px;
     height: 35px;
-    border: 1px solid $additional;
-    background-color: $additional;
-    color: $base-white;
-    cursor: pointer;
   }
 
   &:hover {
-    background-color: $base-white;
     border: 1px solid $condition-active;
     color: $condition-active;
+    background-color: $base-white;
   }
 
-  &:focus {
-    background-color: $base-white;
+  &:focus-visible {
     border: 1px solid $base-white;
     color: $condition-active;
+    background-color: $base-white;
   }
 
   &:active {
-    background-color: $condition-active;
     border: 1px solid $condition-active;
     color: $base-white;
+    background-color: $condition-active;
   }
 
   &:disabled {
-    background-color: $condition-disabled;
     border: 1px solid $condition-disabled;
     color: $base-white;
+    background-color: $condition-disabled;
   }
 }
 

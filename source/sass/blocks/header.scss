@@ -42,6 +42,7 @@
   color: $base-white;
   line-height: 14px;
   font-weight: 600;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     padding-top: 4px;
@@ -55,4 +56,20 @@
     line-height: 18px;
     padding-left: 0;
   }
+
+  &:hover {
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  &:focus {
+    color: $base-primary;
+  }
+
+  &:active {
+    color: $condition-active;
+  }
+}
+
+.header__phone--disabled {
+  color: $condition-disabled;
 }

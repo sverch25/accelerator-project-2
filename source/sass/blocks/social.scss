@@ -1,0 +1,37 @@
+.social {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 18px;
+  }
+}
+
+.social__item {
+  width: 32px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media (min-width: $desktop-width) {
+    width: 30px;
+  }
+}
+
+.social__link--vk {
+  padding: 4px 6px;
+}
+
+.social__link--ok {
+  padding: 5px 10px 2px 9px;
+}
+
+.social__link--reddit {
+  padding: 6px 7px 2px;
+}
