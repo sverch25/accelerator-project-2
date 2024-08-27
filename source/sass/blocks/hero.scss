@@ -106,6 +106,14 @@
   }
 }
 
+.hero__content span {
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    display: inline;
+  }
+}
+
 .hero__item--with-photos .hero__content::before {
   @media (min-width: $tablet-width) {
     position: absolute;
