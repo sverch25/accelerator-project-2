@@ -16,7 +16,7 @@
   }
 }
 
-.hero::after {
+.hero__item::after {
   position: absolute;
   content: "";
   top: 0;
@@ -99,14 +99,14 @@
   }
 }
 
-.hero__item:nth-child(2) .hero__content {
+.hero__item--with-photos .hero__content {
   @media (min-width: $tablet-width) {
     justify-content: flex-start;
     top: 137px;
   }
 }
 
-.hero__item:nth-child(2) .hero__content::after {
+.hero__item--with-photos .hero__content::before {
   @media (min-width: $tablet-width) {
     position: absolute;
     content: "";
