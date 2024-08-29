@@ -3,16 +3,13 @@
   display: grid;
   grid-template-columns: 320px;
   justify-content: center;
-  margin-bottom: 23px;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 768px;
-    margin-bottom: 44px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 1440px;
-    margin-bottom: 107px;
   }
 }
 

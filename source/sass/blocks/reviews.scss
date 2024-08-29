@@ -3,25 +3,22 @@
   display: grid;
   grid-template-columns: 320px;
   justify-content: center;
-  margin-bottom: 31px;
+  padding-top: 20px;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 768px;
+    padding-top: 44px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 1440px;
-    padding-top: 37px;
-    margin-bottom: 83px;
+    padding-top: 111px;
+    padding-bottom: 87px;
   }
 }
 
 .reviews__wrapper {
-  padding: 22px 15px 20px;
-
-  @media (min-width: $tablet-width) {
-    padding: 46px 45px 40px;
-  }
+  padding: 0;
 
   @media (min-width: $desktop-width) {
     padding: 100px 120px;
@@ -30,9 +27,11 @@
 
 .reviews__title {
   margin-bottom: 14px;
+  padding-left: 15px;
 
   @media (min-width: $tablet-width) {
     margin: 0 45px 18px;
+    padding-left: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -40,8 +39,21 @@
   }
 }
 
+.reviews__slider {
+  padding: 0 15px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 0 40px;
+  }
+}
+
 .reviews__title::after {
   top: 2px;
+  padding-left: 15px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+  }
 
   @media (min-width: $desktop-width) {
     top: -23px;
@@ -61,7 +73,6 @@
 
 .reviews__list {
   max-width: 290px;
-  margin-bottom: 10px;
 
   @media (min-width: $tablet-width) {
     max-width: 723px;
@@ -71,26 +82,23 @@
   @media (min-width: $desktop-width) {
     max-width: 1320px;
     margin-left: 120px;
-    margin-bottom: 17px;
   }
 }
 
 .reviews__item {
   max-width: 290px;
-  min-height: 484px;
-  padding: 20px;
-  padding-bottom: 17px;
-  box-shadow: 0 0 20px 0 rgba(28, 51, 116, 0.1);
+  height: 484px;
+  padding: 21px 20px 20px;
   background-color: $base-white;
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
+  box-shadow: 0 0 20px 0 rgba(28, 51, 116, 0.1);
 
   @media (min-width: $tablet-width) {
     max-width: 565px;
-    min-height: 277px;
-    padding-bottom: 20px;
-    padding-right: 30px;
+    padding: 20px 30px 20px 20px;
+    height: 277px;
     column-gap: 30px;
     flex-direction: row;
   }
@@ -146,6 +154,15 @@
   margin: 0;
   font-size: 12px;
   line-height: 18px;
+  white-space: pre-line;
+
+  @media (min-width: $tablet-width) {
+    white-space: normal;
+
+    span {
+      display: block;
+    }
+  }
 
   @media (min-width: $desktop-width) {
     font-size: 14px;

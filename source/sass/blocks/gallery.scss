@@ -101,6 +101,7 @@
 .gallery__buttons {
   @media (min-width: $tablet-width) {
     top: 146px;
+    right: 45px;
   }
 
   @media (min-width: $desktop-width) {
@@ -113,7 +114,6 @@
   overflow: hidden;
   display: grid;
   grid-template-columns: 158px 157px 158px 157px 158px;
-  grid-template-rows: 135px 126px;
   gap: 5px;
 
   @media (min-width: $tablet-width) {
@@ -138,13 +138,11 @@
 .gallery__item:nth-child(2),
 .gallery__item:nth-child(5) {
   grid-row: 1/2;
-  align-self: flex-start;
 }
 
 .gallery__item:nth-child(3),
 .gallery__item:nth-child(6) {
   grid-row: 2/3;
-  align-self: flex-end;
 }
 
 .gallery__image {

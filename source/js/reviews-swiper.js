@@ -9,7 +9,6 @@ const options = {
   spaceBetween: 15,
   loop: false,
   slidesPerGroup: 1,
-  autoHeight: true,
   slideClass: 'reviews__item',
   navigation: {
     nextEl: '.reviews__button--next',

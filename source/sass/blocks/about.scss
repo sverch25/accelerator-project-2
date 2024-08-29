@@ -3,15 +3,14 @@
   display: grid;
   grid-template-columns: 320px;
   justify-content: center;
-  margin-bottom: 22px;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 768px;
-    margin-bottom: 46px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 1440px;
+    min-height: 698px;
   }
 }
 
@@ -35,7 +34,7 @@
     left: 0;
     transform: none;
     width: 542px;
-    height: 714px;
+    height: 710px;
     background-image:
       image-set(url("../../img/about-tablet.webp") 1x type("image/webp"),
       url("../../img/about-tablet.jpg") 1x,
@@ -47,7 +46,7 @@
 
   @media (min-width: $desktop-width) {
     width: 660px;
-    height: 602px;
+    height: 578px;
     background-image:
       image-set(url("../../img/about-desktop.webp") 1x type("image/webp"),
       url("../../img/about-desktop.jpg") 1x,
@@ -61,12 +60,11 @@
   padding: 421px 15px 20px;
 
   @media (min-width: $tablet-width) {
-    padding: 47px 48px 40px 450px;
+    padding: 45px 48px 40px 450px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 153px 120px 100px 660px;
-    margin-bottom: 109px;
+    padding: 133px 120px 100px 660px;
   }
 }
 
@@ -143,20 +141,36 @@
 .about__history p {
   margin: 0;
   margin-bottom: 27px;
+  white-space: pre-line;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
     margin-bottom: 29px;
+    white-space: normal;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 14px;
     line-height: 22px;
-    width: 585px;
+    width: 572px;
   }
 }
 
 .about__history p:last-child {
   margin-bottom: 0;
+
+  @media (min-width: $desktop-width) {
+    width: 581px;
+  }
+}
+
+.about__history span {
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: inline;
+  }
 }
