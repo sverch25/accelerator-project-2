@@ -6,7 +6,6 @@ import 'swiper/css/navigation';
 const options = {
   direction: 'horizontal',
   slidesPerView: 2,
-  spaceBetween: 5,
   loop: true,
   slidesPerGroup: 1,
   navigation: {
@@ -17,7 +16,7 @@ const options = {
   breakpoints: {
     320: {
       slidesPerView: 2,
-      spaceBetween: 5,
+      spaceBetween: 4.1,
     },
     768: {
       slidesPerView: 3,
