@@ -5,7 +5,7 @@ import 'swiper/css/navigation';
 
 const options = {
   direction: 'horizontal',
-  slidesPerView: 1,
+  slidesPerView: 'auto',
   spaceBetween: 15,
   loop: false,
   slidesPerGroup: 1,

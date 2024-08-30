@@ -788,140 +788,105 @@
     </section>
     <section class="gallery" id="photos" data-test="gallery">
       <div class="gallery__wrapper">
-        <h3 class="gallery__title title" data-duplicate-text="Фотогалерея">Фотогалерея</h3>
-        <div class="gallery__discription">
-          <p>Добавляйте фото с хэштегом #лайфтур,<br> а также отмечайте нас на фото. Лучшие фотографии украсят этот
-            раздел нашего сайта.</p>
-        </div>
-        <div class="gallery__slider">
-          <div class="gallery__buttons button-wrapper">
-            <button class="gallery__button gallery__button--prev button button--prev" type="button">
-              <span class="visually-hidden">Назад</span>
-              <svg class="gallery__icon icon" width="14" height="8" aria-hidden="true">
-                <use href="/__spritemap#sprite-arrow"></use>
-              </svg>
-            </button>
-            <button class="gallery__button gallery__button--next button button--next" type="button">
-              <span class="visually-hidden">Вперёд</span>
-              <svg class="gallery__icon icon" width="14" height="8" aria-hidden="true">
-                <use href="/__spritemap#sprite-arrow"></use>
-              </svg>
-            </button>
+        <div class="gallery__container swiper">
+          <h3 class="gallery__title title" data-duplicate-text="Фотогалерея">Фотогалерея</h3>
+          <div class="gallery__discription">
+            <p>Добавляйте фото с хэштегом #лайфтур,<br> а также отмечайте нас на фото. Лучшие фотографии украсят этот раздел нашего сайта.</p>
           </div>
-          <ul class="gallery__list list">
-            <li class="gallery__item">
-              <picture>
-                <source type="image/webp" media="(min-width: 1440px)"
-                  srcset="img/gallery1.webp 1x, img/gallery1@2x.webp 2x" width="284" height="463">
-                <source type="image/webp" media="(min-width: 768px)"
-                  srcset="img/gallery1.webp 1x, img/gallery1@2x.webp 2x" width="253" height="418">
-                <source type="image/webp" srcset="img/gallery1.webp 1x, img/gallery1@2x.webp 2x" width="158"
-                  height="266">
-                <source type="image/jpg" media="(min-width: 1440px)"
-                  srcset="img/gallery1.jpg 1x, img/gallery1@2x.jpg 2x" width="284" height="463">
-                <source type="image/jpg" media="(min-width: 768px)" srcset="img/gallery1.jpg 1x, img/gallery1@2x.jpg 2x"
-                  width="253" height="418">
-                <img class="gallery__image" src="img/gallery1.jpg" srcset="img/gallery1@2x.jpg 2x" width="158"
-                  height="266" alt="Мужчина с рюкзаком на фоне гор.">
-              </picture>
-            </li>
-            <li class="gallery__item">
-              <picture>
-                <source type="image/webp" media="(min-width: 1440px)"
-                  srcset="img/gallery2.webp 1x, img/gallery2@2x.webp 2x" width="284" height="228">
-                <source type="image/webp" media="(min-width: 768px)"
-                  srcset="img/gallery2.webp 1x, img/gallery2@2x.webp 2x" width="252" height="206">
-                <source type="image/webp" srcset="img/gallery2.webp 1x, img/gallery2@2x.webp 2x" width="158"
-                  height="130">
-                <source type="image/jpg" media="(min-width: 1440px)"
-                  srcset="img/gallery2.jpg 1x, img/gallery2@2x.jpg 2x" width="284" height="228">
-                <source type="image/jpg" media="(min-width: 768px)" srcset="img/gallery2.jpg 1x, img/gallery2@2x.jpg 2x"
-                  width="252" height="206">
-                <img class="gallery__image" src="img/gallery2.jpg" srcset="img/gallery2@2x.jpg 2x" width="158"
-                  height="130" alt="Компания людей вечером у костра.">
-              </picture>
-            </li>
-            <li class="gallery__item">
-              <picture>
-                <source type="image/webp" media="(min-width: 1440px)"
-                  srcset="img/gallery3.webp 1x, img/gallery3@2x.webp 2x" width="284" height="228">
-                <source type="image/webp" media="(min-width: 768px)"
-                  srcset="img/gallery3.webp 1x, img/gallery3@2x.webp 2x" width="252" height="206">
-                <source type="image/webp" srcset="img/gallery3.webp 1x, img/gallery3@2x.webp 2x" width="158"
-                  height="130">
-                <source type="image/jpg" media="(min-width: 1440px)"
-                  srcset="img/gallery3.jpg 1x, img/gallery3@2x.jpg 2x" width="284" height="228">
-                <source type="image/jpg" media="(min-width: 768px)" srcset="img/gallery3.jpg 1x, img/gallery3@2x.jpg 2x"
-                  width="252" height="206">
-                <img class="gallery__image" src="img/gallery3.jpg" srcset="img/gallery3@2x.jpg 2x" width="158"
-                  height="130" alt="Рука с компасом на фоне гор.">
-              </picture>
-            </li>
-            <li class="gallery__item">
-              <picture>
-                <source type="image/webp" media="(min-width: 1440px)"
-                  srcset="img/gallery4.webp 1x, img/gallery4@2x.webp 2x" width="284" height="463">
-                <source type="image/webp" media="(min-width: 768px)"
-                  srcset="img/gallery4.webp 1x, img/gallery4@2x.webp 2x" width="253" height="418">
-                <source type="image/webp" srcset="img/gallery4.webp 1x, img/gallery4@2x.webp 2x" width="158"
-                  height="266">
-                <source type="image/jpg" media="(min-width: 1440px)"
-                  srcset="img/gallery4.jpg 1x, img/gallery4@2x.jpg 2x" width="284" height="463">
-                <source type="image/jpg" media="(min-width: 768px)" srcset="img/gallery4.jpg 1x, img/gallery4@2x.jpg 2x"
-                  width="253" height="418">
-                <img class="gallery__image" src="img/gallery4.jpg" srcset="img/gallery4@2x.jpg 2x" width="158"
-                  height="266" alt="Колонна туристов движется к вершине.">
-              </picture>
-            </li>
-            <li class="gallery__item">
-              <picture>
-                <source type="image/webp" media="(min-width: 1440px)"
-                  srcset="img/gallery5.webp 1x, img/gallery5@2x.webp 2x" width="284" height="228">
-                <source type="image/webp" media="(min-width: 768px)"
-                  srcset="img/gallery5.webp 1x, img/gallery5@2x.webp 2x" width="252" height="206">
-                <source type="image/webp" srcset="img/gallery5.webp 1x, img/gallery5@2x.webp 2x" width="158"
-                  height="130">
-                <source type="image/jpg" media="(min-width: 1440px)"
-                  srcset="img/gallery5.jpg 1x, img/gallery5@2x.jpg 2x" width="284" height="228">
-                <source type="image/jpg" media="(min-width: 768px)" srcset="img/gallery5.jpg 1x, img/gallery5@2x.jpg 2x"
-                  width="252" height="206">
-                <img class="gallery__image" src="img/gallery5.jpg" srcset="img/gallery5@2x.jpg 2x" width="158"
-                  height="130" alt="Колонна туристов идут между ледников.">
-              </picture>
-            </li>
-            <li class="gallery__item">
-              <picture>
-                <source type="image/webp" media="(min-width: 1440px)"
-                  srcset="img/gallery6.webp 1x, img/gallery6@2x.webp 2x" width="284" height="228">
-                <source type="image/webp" media="(min-width: 768px)"
-                  srcset="img/gallery6.webp 1x, img/gallery6@2x.webp 2x" width="252" height="206">
-                <source type="image/webp" srcset="img/gallery6.webp 1x, img/gallery6@2x.webp 2x" width="158"
-                  height="130">
-                <source type="image/jpg" media="(min-width: 1440px)"
-                  srcset="img/gallery6.jpg 1x, img/gallery6@2x.jpg 2x" width="284" height="228">
-                <source type="image/jpg" media="(min-width: 768px)" srcset="img/gallery6.jpg 1x, img/gallery6@2x.jpg 2x"
-                  width="252" height="206">
-                <img class="gallery__image" src="img/gallery6.jpg" srcset="img/gallery6@2x.jpg 2x" width="158"
-                  height="130" alt="Палатка и ночное небо.">
-              </picture>
-            </li>
-            <li class="gallery__item">
-              <picture>
-                <source type="image/webp" media="(min-width: 1440px)"
-                  srcset="img/gallery7.webp 1x, img/gallery7@2x.webp 2x" width="284" height="463">
-                <source type="image/webp" media="(min-width: 768px)"
-                  srcset="img/gallery7.webp 1x, img/gallery7@2x.webp 2x" width="253" height="418">
-                <source type="image/webp" srcset="img/gallery7.webp 1x, img/gallery7@2x.webp 2x" width="158"
-                  height="266">
-                <source type="image/jpg" media="(min-width: 1440px)"
-                  srcset="img/gallery7.jpg 1x, img/gallery7@2x.jpg 2x" width="284" height="463">
-                <source type="image/jpg" media="(min-width: 768px)" srcset="img/gallery7.jpg 1x, img/gallery7@2x.jpg 2x"
-                  width="253" height="418">
-                <img class="gallery__image" src="img/gallery7.jpg" srcset="img/gallery7@2x.jpg 2x" width="158"
-                  height="266" alt="Два туриста ранним утром.">
-              </picture>
-            </li>
-          </ul>
+          <div class="gallery__slider" id="swiper-gallery">
+            <div class="gallery__buttons button-wrapper">
+              <button class="gallery__button gallery__button--prev button button--prev" type="button">
+                <span class="visually-hidden">Назад</span>
+                <svg class="gallery__icon icon" width="14" height="8" aria-hidden="true">
+                  <use href="/__spritemap#sprite-arrow"></use>
+                </svg>
+              </button>
+              <button class="gallery__button gallery__button--next button button--next" type="button">
+                <span class="visually-hidden">Вперёд</span>
+                <svg class="gallery__icon icon" width="14" height="8" aria-hidden="true">
+                  <use href="/__spritemap#sprite-arrow"></use>
+                </svg>
+              </button>
+            </div>
+            <ul class="gallery__list list swiper-wrapper">
+              <li class="gallery__item swiper-slide">
+                <div class="gallery__content">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1440px)" srcset="img/gallery1.webp 1x, img/gallery1@2x.webp 2x" width="284" height="463">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/gallery1-tablet.webp 1x, img/gallery1-tablet@2x.webp 2x" width="253" height="418">
+                    <source type="image/webp" srcset="img/gallery1-mobile.webp 1x, img/gallery1-mobile@2x.webp 2x" width="158" height="266">
+                    <source type="image/jpg" media="(min-width: 1440px)" srcset="img/gallery1.jpg 1x, img/gallery1@2x.jpg 2x" width="284" height="463">
+                    <source type="image/jpg" media="(min-width: 768px)" srcset="img/gallery1-tablet.jpg 1x, img/gallery1-tablet@2x.jpg 2x" width="253" height="418">
+                    <img class="gallery__image" src="img/gallery1-mobile.jpg" srcset="img/gallery1-mobile@2x.jpg 2x" width="158" height="266" alt="Мужчина с рюкзаком на фоне гор.">
+                  </picture>
+                </div>
+              </li>
+              <li class="gallery__item swiper-slide">
+                <div class="gallery__content">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1440px)" srcset="img/gallery2.webp 1x, img/gallery2@2x.webp 2x" width="284" height="228">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/gallery2-tablet.webp 1x, img/gallery2-tablet@2x.webp 2x" width="252" height="206">
+                    <source type="image/webp" srcset="img/gallery2-mobile.webp 1x, img/gallery2-mobile@2x.webp 2x" width="158" height="130">
+                    <source type="image/jpg" media="(min-width: 1440px)" srcset="img/gallery2.jpg 1x, img/gallery2@2x.jpg 2x" width="284" height="228">
+                    <source type="image/jpg" media="(min-width: 768px)" srcset="img/gallery2-tablet.jpg 1x, img/gallery2-tablet@2x.jpg 2x" width="252" height="206">
+                    <img class="gallery__image" src="img/gallery2-mobile.jpg" srcset="img/gallery2-mobile@2x.jpg 2x" width="158" height="130" alt="Компания людей вечером у костра.">
+                  </picture>
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1440px)" srcset="img/gallery3.webp 1x, img/gallery3@2x.webp 2x" width="284" height="228">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/gallery3-tablet.webp 1x, img/gallery3-tablet@2x.webp 2x" width="252" height="210">
+                    <source type="image/webp" srcset="img/gallery3-mobile.webp 1x, img/gallery3-mobile@2x.webp 2x" width="158" height="130">
+                    <source type="image/jpg" media="(min-width: 1440px)" srcset="img/gallery3.jpg 1x, img/gallery3@2x.jpg 2x" width="284" height="228">
+                    <source type="image/jpg" media="(min-width: 768px)" srcset="img/gallery3-tablet.jpg 1x, img/gallery3-tablet@2x.jpg 2x" width="252" height="210">
+                    <img class="gallery__image" src="img/gallery3-mobile.jpg" srcset="img/gallery3-mobile@2x.jpg 2x" width="158" height="130" alt="Рука с компасом на фоне гор.">
+                  </picture>
+                </div>
+              </li>
+              <li class="gallery__item swiper-slide">
+                <div class="gallery__content">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1440px)" srcset="img/gallery4.webp 1x, img/gallery4@2x.webp 2x" width="284" height="463">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/gallery4-tablet.webp 1x, img/gallery4-tablet@2x.webp 2x" width="253" height="418">
+                    <source type="image/webp" srcset="img/gallery4.webp 1x, img/gallery4@2x.webp 2x" width="158" height="266">
+                    <source type="image/jpg" media="(min-width: 1440px)" srcset="img/gallery4.jpg 1x, img/gallery4@2x.jpg 2x" width="284" height="463">
+                    <source type="image/jpg" media="(min-width: 768px)" srcset="img/gallery4-tablet.jpg 1x, img/gallery4-tablet@2x.jpg 2x" width="253" height="418">
+                    <img class="gallery__image" src="img/gallery4.jpg" srcset="img/gallery4@2x.jpg 2x" width="158" height="266" alt="Колонна туристов движется к вершине.">
+                  </picture>
+                </div>
+              </li>
+              <li class="gallery__item swiper-slide">
+                <div class="gallery__content">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1440px)" srcset="img/gallery5.webp 1x, img/gallery5@2x.webp 2x" width="284" height="228">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/gallery5.webp 1x, img/gallery5@2x.webp 2x" width="252" height="206">
+                    <source type="image/webp" srcset="img/gallery5.webp 1x, img/gallery5@2x.webp 2x" width="158" height="130">
+                    <source type="image/jpg" media="(min-width: 1440px)" srcset="img/gallery5.jpg 1x, img/gallery5@2x.jpg 2x" width="284" height="228">
+                    <source type="image/jpg" media="(min-width: 768px)" srcset="img/gallery5.jpg 1x, img/gallery5@2x.jpg 2x" width="252" height="206">
+                    <img class="gallery__image" src="img/gallery5.jpg" srcset="img/gallery5@2x.jpg 2x" width="158" height="130" alt="Колонна туристов идут между ледников.">
+                  </picture>
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1440px)" srcset="img/gallery6.webp 1x, img/gallery6@2x.webp 2x" width="284" height="228">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/gallery6.webp 1x, img/gallery6@2x.webp 2x" width="252" height="206">
+                    <source type="image/webp" srcset="img/gallery6.webp 1x, img/gallery6@2x.webp 2x" width="158" height="130">
+                    <source type="image/jpg" media="(min-width: 1440px)" srcset="img/gallery6.jpg 1x, img/gallery6@2x.jpg 2x" width="284" height="228">
+                    <source type="image/jpg" media="(min-width: 768px)" srcset="img/gallery6.jpg 1x, img/gallery6@2x.jpg 2x" width="252" height="206">
+                    <img class="gallery__image" src="img/gallery6.jpg" srcset="img/gallery6@2x.jpg 2x" width="158" height="130" alt="Палатка и ночное небо.">
+                  </picture>
+                </div>
+              </li>
+              <li class="gallery__item swiper-slide">
+                <div class="gallery__content">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1440px)" srcset="img/gallery7.webp 1x, img/gallery7@2x.webp 2x" width="284" height="463">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/gallery7.webp 1x, img/gallery7@2x.webp 2x" width="253" height="418">
+                    <source type="image/webp" srcset="img/gallery7.webp 1x, img/gallery7@2x.webp 2x" width="158" height="266">
+                    <source type="image/jpg" media="(min-width: 1440px)" srcset="img/gallery7.jpg 1x, img/gallery7@2x.jpg 2x" width="284" height="463">
+                    <source type="image/jpg" media="(min-width: 768px)" srcset="img/gallery7.jpg 1x, img/gallery7@2x.jpg 2x" width="253" height="418">
+                    <img class="gallery__image" src="img/gallery7.jpg" srcset="img/gallery7@2x.jpg 2x" width="158" height="266" alt="Два туриста ранним утром.">
+                  </picture>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
@@ -939,8 +904,7 @@
               <label class="form__label" for="phone">Телефон</label>
             </div>
             <div class="form__item form__item--email">
-              <input class="form__input" type="email" id="email" name="email" placeholder="keks@mail.ru"
-                pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}(?:\.рф)" required>
+              <input class="form__input" type="email" id="email" name="email" placeholder="keks@mail.ru" pattern="^[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9\-\.]+\.[a-zA-Z]{2,}$" required>
               <label class="form__label" for="email">Email</label>
             </div>
             <button class="form__button button" type="submit">Отправить</button>

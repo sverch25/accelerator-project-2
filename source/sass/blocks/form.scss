@@ -217,3 +217,11 @@
 .form__item .form__input:not(:placeholder-shown) + .form__label {
   color: transparent;
 }
+
+.form__input.error {
+  border: 1px solid $condition-error;
+}
+
+.form__input:user-invalid {
+  border: 1px solid $condition-error;
+}
