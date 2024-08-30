@@ -63,6 +63,7 @@
 .contacts__text p {
   margin: 0;
   padding: 0 15px;
+  white-space: pre-line;
 
   @media (min-width: $tablet-width) {
     width: 485px;
@@ -70,6 +71,7 @@
     margin: 0 45px;
     font-size: 16px;
     line-height: 24px;
+    white-space: normal;
 
     span {
       display: block;
