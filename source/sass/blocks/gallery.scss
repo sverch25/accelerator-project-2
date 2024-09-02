@@ -16,6 +16,10 @@
   padding-top: 21px;
   padding-bottom: 3px;
 
+  @media (max-width: $mobile-width-only) {
+    height: 457.5px;
+  }
+
   @media (min-width: $tablet-width) {
     position: relative;
     padding-top: 44px;
@@ -151,7 +155,7 @@
 .gallery__content {
   display: flex;
   flex-direction: column;
-  row-gap: 5px;
+  row-gap: 6px;
 
   @media (min-width: $tablet-width) {
     row-gap: 6px;
@@ -165,5 +169,20 @@
 .gallery__image {
   display: block;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
+}
+
+@media (max-width: $mobile-width-only) {
+  .gallery__pictire--main {
+    height: 266px;
+    transform: scale(1.02);
+  }
+
+  .gallery__pictire--secondary {
+    height: 135px;
+  }
+
+  .gallery__pictire--thirdly {
+    height: 125px;
+  }
 }

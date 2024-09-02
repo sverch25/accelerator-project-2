@@ -6,10 +6,10 @@
   align-items: center;
   position: relative;
   background-image:
-    image-set(url("../../img/form-mobile.webp") 1x type("image/webp"),
-    url("../../img/form-mobile.jpg") 1x,
-    url("../../img/form-mobile@2x.webp") 2x type("image/webp"),
-    url("../../img/form-mobile@2x.jpg") 2x);
+    image-set(url("/img/form-mobile.webp") 1x type("image/webp"),
+    url("/img/form-mobile.jpg") 1x,
+    url("/img/form-mobile@2x.webp") 2x type("image/webp"),
+    url("/img/form-mobile@2x.jpg") 2x);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 320px 638px;
@@ -17,20 +17,20 @@
   @media (min-width: $tablet-width) {
     min-height: 680px;
     background-image:
-      image-set(url("../../img/form-tablet.webp") 1x type("image/webp"),
-      url("../../img/form-tablet.jpg") 1x,
-      url("../../img/form-tablet@2x.webp") 2x type("image/webp"),
-      url("../../img/form-tablet@2x.jpg") 2x);
+      image-set(url("/img/form-tablet.webp") 1x type("image/webp"),
+      url("/img/form-tablet.jpg") 1x,
+      url("/img/form-tablet@2x.webp") 2x type("image/webp"),
+      url("/img/form-tablet@2x.jpg") 2x);
     background-size: 768px 680px;
   }
 
   @media (min-width: $desktop-width) {
     min-height: 760px;
     background-image:
-      image-set(url("../../img/form-desktop.webp") 1x type("image/webp"),
-      url("../../img/form-desktop.jpg") 1x,
-      url("../../img/form-desktop@2x.webp") 2x type("image/webp"),
-      url("../../img/form-desktop@2x.jpg") 2x);
+      image-set(url("/img/form-desktop.webp") 1x type("image/webp"),
+      url("/img/form-desktop.jpg") 1x,
+      url("/img/form-desktop@2x.webp") 2x type("image/webp"),
+      url("/img/form-desktop@2x.jpg") 2x);
     background-size: 1440px 760px;
   }
 }
@@ -150,7 +150,7 @@
 
 .form__input {
   width: 258px;
-  padding: 15.97px 15px;
+  padding: 18px 15px 14px;
   border-radius: 2px;
   border: 1px solid $base-white;
   cursor: pointer;

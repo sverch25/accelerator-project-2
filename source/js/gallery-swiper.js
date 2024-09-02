@@ -16,7 +16,7 @@ const options = {
   breakpoints: {
     320: {
       slidesPerView: 2,
-      spaceBetween: 4.1,
+      spaceBetween: 5,
     },
     768: {
       slidesPerView: 3,
